@@ -1,4 +1,4 @@
-A (very) simple jQuery (+ Bootstrap icons) eordering plugin, without drag-and-drop.  
+A (very) simple jQuery (+ Bootstrap icons) reordering plugin, without drag-and-drop.  
 It's simplistic interface allows for quick mobile support.
 
 <br />
