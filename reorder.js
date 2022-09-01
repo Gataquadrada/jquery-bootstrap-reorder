@@ -6,9 +6,8 @@
             containers: null,
             relationships: [], // EG: YOU CAN PREVENT A FOLDER FROM BEING INSERTED INSIDE ANOTHER FOLDER
             reorderBegin: null, // BEFORE ANYTHING HAPPENS
-            reorderEnd: null, // RETURNS AN ARRAY WITH ALL ELEMENTS AND CHILDREN
             reorderCancel: null,
-            reorderFinish: null,
+            reorderFinish: null, // RETURNS AN ARRAY WITH ALL ELEMENTS AND CHILDREN
             beforeMove: () => {
                 return true
             }, // IN CASE YOU NEED CUSTOM LOGIC FOR DECIDING RELATIONSHIPS
@@ -196,17 +195,15 @@
                     return null
                 }
 
-                moving
-                    .insertBefore(btn)
-                    .trigger("reorder-moved", moving, target)
+                moving.insertBefore(btn).trigger("reorder-moved", moving, btn)
 
-                elem.trigger("reorder-moved", moving, target)
+                elem.trigger("reorder-moved", moving, btn)
 
                 if (
                     settings.afterMove &&
                     typeof function () {} == typeof settings.afterMove
                 ) {
-                    settings.afterMove(moving, target)
+                    settings.afterMove(moving, btn)
                 }
             })
 
