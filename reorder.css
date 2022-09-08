@@ -91,10 +91,12 @@
 .reorder-container.reorder-is-moving .reorder-subcontainer {
     /* border: 2px dashed #e4e4e4; */
 }
+.reorder-container:empty,
 .reorder-container *:not(.reorder-target-current) .reorder-subcontainer:empty {
     min-height: 50px;
     border: 2px dashed #ffbcc3;
 }
+.reorder-container:empty::before,
 .reorder-container
     *:not(.reorder-target-current)
     .reorder-subcontainer:empty::before {
