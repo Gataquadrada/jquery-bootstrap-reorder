@@ -50,12 +50,12 @@ You can extend the plugin's `$.fn.reorder.lang` object for translating.
 
 ```js
 ;(function ($) {
-    $.fn.reorder.lang = {
-        move_before: "Bewegen sie sich vorher", // Google translate
-        move_inside: "Bewegen sie sich hinein", // Google translate
-        cancel: "Absagen", // Google translate
-        finish: "Fertig", // Google translate
-    }
+	$.fn.reorder.lang = {
+		move_before: "Bewegen sie sich vorher", // Google translate
+		move_inside: "Bewegen sie sich hinein", // Google translate
+		cancel: "Absagen", // Google translate
+		finish: "Fertig", // Google translate
+	}
 })(jQuery) // encapsulating jQuery is a good practice
 ```
 
@@ -105,12 +105,12 @@ You can extend the plugin's `$.fn.reorder.templates` object for translating.
 
 ```js
 ;(function ($) {
-    $.fn.reorder.templates = {
-        action_move_before: `<button class="reorder-action reorder-action-move-before" type="button" title="${$.fn.reorder.lang.move_before}"></button>`,
-        action_move_inside: `<button class="reorder-action reorder-action-move-inside" type="button" title="${$.fn.reorder.lang.move_inside}"></button>`,
-        action_cancel: `<button class="reorder-action reorder-action-cancel" type="button" title="${$.fn.reorder.lang.cancel}"></button>`,
-        action_finish: `<button class="reorder-action reorder-action-finish" type="button" title="${$.fn.reorder.lang.finish}"></button>`,
-    }
+	$.fn.reorder.templates = {
+		action_move_before: `<button class="reorder-action reorder-action-move-before" type="button" title="${$.fn.reorder.lang.move_before}"></button>`,
+		action_move_inside: `<button class="reorder-action reorder-action-move-inside" type="button" title="${$.fn.reorder.lang.move_inside}"></button>`,
+		action_cancel: `<button class="reorder-action reorder-action-cancel" type="button" title="${$.fn.reorder.lang.cancel}"></button>`,
+		action_finish: `<button class="reorder-action reorder-action-finish" type="button" title="${$.fn.reorder.lang.finish}"></button>`,
+	}
 })(jQuery) // encapsulating jQuery is a good practice
 ```
 
@@ -141,8 +141,8 @@ You can extend the plugin's `$.fn.reorder.templates` object for translating.
 
 ([Back to top](#summary))
 
--   [Buy me a coffee](https://www.buymeacoffee.com/mazeakin)
--   [Follow me on Twitter](https://twitter.com/mazeakin)
--   [Follow me on Twitch](https://twitch.tv/mazeakin)
+-   [Buy me a coffee](https://www.buymeacoffee.com/gataquadrada)
+-   [Follow me on Twitter](https://twitter.com/gataquadrada)
+-   [Follow me on Twitch](https://twitch.tv/gataquadrada)
 -   [Join my Discord](https://discord.gg/eYfSNQT)
--   [Get sub emotes on my old channel](https://twitch.tv/gataquadrada)
+-   [Get sub emotes on my channel](https://twitch.tv/gataquadrada)
